@@ -15,6 +15,11 @@ function getList() {
   });
 }
 
+var errorParagraph = document.getElementById("error");
+var listUl = document.getElementById("list");
+
+getList()
+
 // TODO: Handle the resolved or rejected states of the promise
 
 // TODO: If the promise resolves with the list of hobbits

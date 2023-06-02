@@ -15,10 +15,22 @@ function getList() {
   });
 }
 
-var errorParagraph = document.getElementById("error");
-var listUl = document.getElementById("list");
+const errorParagraph = document.querySelector('#error');
+const listUl = document.querySelector('#list');
 
 getList()
+
+.then((hobbits)=>{
+    console.log(hobbits)
+
+    for (let hobbit of hobbits){
+      const li = document.createElement('li')
+      li.textContent = hobbit;
+      listUl.appendChild(li);
+    }
+})
+
+
 
 // TODO: Handle the resolved or rejected states of the promise
 

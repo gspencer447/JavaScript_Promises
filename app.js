@@ -28,6 +28,7 @@ getList()
       li.textContent = hobbit;
       listUl.appendChild(li);
     }
+    console.log(error.message);
 })
 
 

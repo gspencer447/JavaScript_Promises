@@ -29,7 +29,11 @@ getList()
       listUl.appendChild(li);
     }
     console.log(error.message);
-})
+  })
+  .catch((error)=> {
+    let p = document.querySelector('p');
+    p.textContent = error.message;
+  });
 
 
 
